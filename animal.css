@@ -1,0 +1,68 @@
+body {
+ font-family: Arial;
+ background-color: black;
+ color: white;
+ margin: 0px;
+ text-align: center;
+}
+h1 {
+ background-color: green;
+ color: white;
+ margin: 0px;
+ padding: 20px;
+}
+h2 {
+ color: green;
+}
+a {
+ color: yellow;
+ text-decoration: none;
+ padding: 8px;
+}
+a:hover {
+ background-color: gray;
+}
+div {
+ padding: 20px;
+}
+table {
+ margin: auto;
+ border-collapse: collapse;
+ background-color: black;
+}
+th {
+ background-color: green;
+ color: black;
+}
+th, td {
+ border: 1px solid gray;
+ padding: 10px;
+}
+img {
+ width: 100px;
+ height: 100px;
+ border-radius: 10px;
+}
+input, textarea {
+ width: 250px;
+ padding: 6px;
+ border: 3px solid;
+}
+button {
+ background-color: green;
+ color: white;
+ padding: 10px;
+ border: 0px;
+}
+ul {
+ list-style-type: none;
+}
+#more {
+ display: none;
+}
+#msg {
+display:none;
+}
+button {
+ margin: 4px;
+}

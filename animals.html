@@ -1,0 +1,147 @@
+<html>
+<head>
+<title> Paws Adoption </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="animal.css">
+<script>
+const petTips = [
+  "Dogs need daily exercise to stay healthy and happy.",
+  "Cats spend about 70% of their lives sleeping.",
+  "Rabbits express their happiness by doing a little jump called a 'binky'.",
+  "Hamsters are nocturnal and are most active at night."
+];
+
+function showRandomTip() {
+  const randomIndex = Math.floor(Math.random() * petTips.length);
+  document.getElementById("tipBox").innerHTML = petTips[randomIndex];
+}
+
+function showMore() {
+  document.getElementById("more").style.display = "block";
+}
+function hideMore() {
+  document.getElementById("more").style.display = "none";
+}
+function bigText() {
+  document.getElementById("about").style.fontSize = "48px";
+}
+function normalText() {
+  document.getElementById("about").style.fontSize = "16px";
+}
+function sendForm() {
+  document.getElementById("msg").innerHTML = "Thank you! We will contact you soon."; 
+  alert("Your adoption request is sent.");
+}
+</script>
+</head>
+<body>
+<h1> Paws Animal Adoption Agency </h1>
+<p> Animal deserves a loving and caring family too!</p>
+<p>
+<a href="#home"> Home </a>
+<a href="#about"> About </a>
+<a href="#tips"> Tips </a>
+<a href="#form"> Form </a>
+<a href="#animals"> Animal </a>
+<a href="#contact"> Contact </a></p>
+<hr>
+<div id="home">
+<h2> WELcomeee.. </h2>
+<p>Every pet waits for its home. Do you want to be one??</p>
+<img src="intro.jpg" alt="intro" width="600" height="600">
+</div>
+<hr>
+<div id="about">
+<h2> About Us </h2>
+<p> Our agency rescues these cute strays and abandoned animals </p>
+<p> We give them food, medical care, and most importantly love until they find <b> YOU </b> and a new family </p>
+<p><b> EXCITED??</b> your friends are too</p>
+<ul>
+<li> Rescue and care </li>
+<li> Free health check-up </li>
+<li> Safe and easy adoption </li>
+</ul>
+<button type="button" onclick="showMore()"> Read More </button>
+<button type="button" onclick="hideMore()"> Hide </button>
+<button type="button" onclick="bigText()"> A+ </button>
+<button type="button" onclick="normalText()"> A </button>
+<p id="more" style="display: none;"> We also hold an adoption camp every Sunday. Come and meet our animals. </p>
+</div>
+<hr>
+
+<div id="animals">
+<h2> Our Animals </h2>
+<table>
+<tr>
+<th> Photo </th>
+<th> Name </th>
+<th> Type </th>
+<th> Age </th>
+</tr>
+<tr>
+<td><img src="dog.jpg" width="200" height="200" alt="dog"></td>
+<td> Bruno </td>
+<td> Dog </td>
+<td> 2 years </td>
+<td><button type="button" onclick="alert('Woof woof! Bruno likes you too. Please fill the adoption form')"> Adopt </button></td>
+</tr>
+<tr>
+<td><img src="cat.jpg" width="200" height="200" alt="cat"></td>
+<td> Mimi </td>
+<td> Cat </td>
+<td> 1 year </td>
+<td><button type="button" onclick="alert('Meow! mimi is waiting for you. Please fill the adoption form')"> Adopt </button></td>
+</tr>
+<tr>
+<td><img src="rabbit.jpg" width="200" height="200" alt="rabbit"></td>
+<td> Coco </td>
+<td> Rabbit </td>
+<td> 6 months </td>
+<td><button type="button" onclick="alert('Aww cute. Please fill the adoption form')"> Adopt </button></td>
+</tr>
+<tr>
+<td><img src="hamster.jpg" width="200" height="200" alt="hamster"></td>
+<td> cookie </td>
+<td> Hamster </td>
+<td> 8 months </td>
+<td><button type="button" onclick="alert('Coco is ready!! Please fill the adoption form')"> Adopt </button></td>
+</tr>
+</table>
+</div>
+<hr>
+<div id="form">
+<h2> Adoption Form </h2>
+<form>
+<p><label> Your Name </label><br>
+<input type="text"></p>
+<p><label> Email </label><br>
+<input type="text"></p>
+<p><label> Phone </label><br>
+<input type="text"></p>
+<p><label> Animal you want to adopt </label><br>
+<input type="text"></p>
+<p><label> Why do you want to adopt? </label><br>
+<textarea></textarea></p>
+<button type="button" onclick="sendForm()"> Submit </button> 
+</form>
+<p id="msg"></p></div>
+<hr>
+<div id="contact">
+<h2> Contact Us </h2>
+<p><i>
+Paws Animal Adoption Agency<br>
+123 Paws Street, Chandigarh<br>
+Phone: 00000 00000<br>
+Email: pawsadoption@example.com
+</i></p>
+</div>
+<div id="tips">
+<h2> Pet Care Tips</h2>
+<p>Click the button below to load a random tip for your friend</p>
+<button type="button" onclick="showRandomTip()"> Show Random Tip </button>
+<p id="tipBox" style="font-weight: bold; color: red; margin-top: 10px;"></p>
+</div>
+<hr>
+
+</body>
+</html>
